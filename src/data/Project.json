@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Project One",
+    "url": "https://example.com",
+    "technologies": ["Nuxt.js", "Bootstrap CSS", "GSAP"],
+    "start": "2018-10-15",
+    "end": "2020-01-15",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "name": "Project Two",
+    "url": "https://example.com",
+    "technologies": ["Nuxt.js", "Firebase", "Bulma CSS"],
+    "start": "2018-10-15",
+    "end": "2020-01-15",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "name": "Project Three",
+    "url": "https://example.com",
+    "technologies": ["Nuxt.js", "Strapi.io", "Tailwind CSS"],
+    "start": "2018-10-15",
+    "end": "2020-01-15",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  }
+]

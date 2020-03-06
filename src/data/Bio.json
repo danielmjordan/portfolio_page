@@ -1,0 +1,21 @@
+{
+  "name": "Daniel Jordan",
+  "greeting": "Hi, I'm Daniel Jordan",
+  "title": "Full Stack Software Engineer",
+  "description": "I'm a full-stack software developer with with a particular interest in designing and developing systems that are attractive, easy-to-use, and play a part in bettering the people's lives who use them. While I'm not at the keyboard trying to improve my development skills I enjoy traveling, rock-climbing, and practicing my less-than-perfect Spanish.",
+  "social": [
+    {
+      "name": "Github",
+      "url": "https://github.com/danielmjordan"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/danielmjordan"
+    }
+  ],
+  "skills": [
+    "react.js", "node.js", "express.js", "bootstrap", "materialUI", "postgreSQL", "javaScript", "MongoDB", "mongoose", "sequelize", "sass", "jQuery", "mysql", "eslint", "react-native", "mobile", "web", "SQL", "agile development", "git"],
+  "location": "Boulder CO",
+  "email": "danieljordan86@gmail.com",
+  "phone": "(541) 639-7856"
+}
