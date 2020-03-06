@@ -10,6 +10,7 @@
   "dependencies": {
     "@hashinteractive/gatsby-theme-reactor": "^1.0.5",
     "gatsby": "^2.19.31",
+    "gatsby-plugin-react-svg": "^3.0.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
   }
