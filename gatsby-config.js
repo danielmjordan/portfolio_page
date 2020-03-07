@@ -9,6 +9,14 @@ module.exports = {
           exclude: /node_modules/
         }
       }
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Oswald', 'Oswald medium', 'Oxanium']
+        }
+      }
     }
   ],
   siteMetadata: {

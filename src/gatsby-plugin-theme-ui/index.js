@@ -4,7 +4,9 @@ export default {
   ...tailwind,
   colors: {
     ...tailwind.colors,
-    primary: tailwind.colors.blue[9]
+    primary: tailwind.colors.gray[7],
+    secondary: tailwind.colors.gray[4],
+    tertiary: tailwind.colors.gray[2]
   },
   sizes: {
     ...tailwind.sizes,
@@ -12,6 +14,7 @@ export default {
   },
   fonts: {
     ...tailwind.fonts,
-    heading: `'Titillium', ${tailwind.fonts.sans}`
+    heading: `PT serif, ${tailwind.fonts.sans}`,
+    body: `PT serif, ${tailwind.fonts.sans}`
   }
 }

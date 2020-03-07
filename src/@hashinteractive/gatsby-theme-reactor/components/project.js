@@ -20,7 +20,7 @@ const Project = ({project}) => {
           top: -30,
           left: -30,
           borderRadius: 'full',
-          bg: theme => theme.colors.orange[4],
+          bg: theme => theme.colors.gray[5],
           width: 100,
           height: 100
         }}
@@ -60,7 +60,7 @@ const Project = ({project}) => {
               <Styled.h2
                 sx={{
                   my: 0,
-                  color: theme => theme.colors.blue[8],
+                  color: theme => theme.colors.gray[8],
                 }}>
                 { name }
               </Styled.h2>
@@ -96,7 +96,7 @@ const Project = ({project}) => {
                       border: 0,
                       borderLeft: 3,
                       borderStyle: 'solid',
-                      borderColor: theme => theme.colors.blue[4],
+                      borderColor: theme => theme.colors.gray[4],
                       px: 3,
                       py: 1,
                       mr: 3,

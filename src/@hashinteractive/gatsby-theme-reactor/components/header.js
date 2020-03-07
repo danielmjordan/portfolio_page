@@ -31,29 +31,6 @@ const Header = (props) => {
                 color: 'primary'
               }}
               to="/">
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                viewBox='0 0 32 32'
-                width='32'
-                height='32'
-                fill='currentcolor'>
-                <circle
-                  r={14}
-                  cx={16}
-                  cy={16}
-                  fill='none'
-                  stroke='currentcolor'
-                  strokeWidth={4}
-                />
-                <circle
-                  r={6}
-                  cx={16}
-                  cy={16}
-                  fill='lightblue'
-                  stroke='lightblue'
-                  strokeWidth={0}
-                />
-              </svg>
               <Styled.h2
                 sx={{
                   display: 'inline-block',

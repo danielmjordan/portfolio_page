@@ -25,7 +25,7 @@ const Profile = () => {
   return (
     <div
       sx={{
-        bg: theme => theme.colors.blue[2],
+        bg: theme => theme.colors.gray[2],
         boxShadow: '2xl',
         borderRadius: 'lg',
         mb: '50px'
