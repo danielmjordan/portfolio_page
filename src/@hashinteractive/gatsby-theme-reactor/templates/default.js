@@ -133,7 +133,7 @@ const Default = () => {
                   <Styled.h6
                     sx={{
                       mb: 0,
-                      color: 'graydark'
+                      color: 'grayDark'
                     }}>
                     My Skills
                     <span sx={{
@@ -192,7 +192,7 @@ const Default = () => {
               <h1
                 sx={{
                   color: theme => theme.colors.gray[8],
-                  fontSize: ['65px', '85px'],
+                  fontSize: ['55px', '75px'],
                   textAlign: 'right',
                   lineHeight: 1.15,
                   textShadow: '2px 2px 0 lightgray'
