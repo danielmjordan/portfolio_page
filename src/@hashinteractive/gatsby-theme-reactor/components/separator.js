@@ -16,7 +16,7 @@ const Separator = () => (
       width='24'
       height='32'
       sx={{
-        fill: theme => theme.colors.gray[3],
+        fill: theme => theme.colors.orange[3],
         position: 'absolute',
         left: '50%',
         ml: '-12px',

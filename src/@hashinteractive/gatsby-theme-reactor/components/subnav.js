@@ -43,7 +43,7 @@ const Subnav = () => {
                 pt: 16,
                 border: 0,
                 borderTop: 6,
-                borderColor: theme => theme.colors.gray[3],
+                borderColor: theme => theme.colors.orange[3],
                 borderStyle: 'solid'
               }}></span>
           <Styled.h3
@@ -79,9 +79,9 @@ const Subnav = () => {
                   color: theme => theme.colors.gray[6],
                   fontSize: 0
                 }}>
-                <span sx={{ bg: theme => theme.colors.gray[3], mr: 3, width: 10, height: 1, display: 'inline-block', verticalAlign: 'middle' }}></span>
+                <span sx={{ bg: theme => theme.colors.orange[3], mr: 3, width: 10, height: 1, display: 'inline-block', verticalAlign: 'middle' }}></span>
                 <span sx={{ verticalAlign: 'middle' }}>Connect with Me</span>
-                <span sx={{ bg: theme => theme.colors.gray[3], ml: 3, width: 10, height: 1, display: 'inline-block', verticalAlign: 'middle' }}></span>
+                <span sx={{ bg: theme => theme.colors.orange[3], ml: 3, width: 10, height: 1, display: 'inline-block', verticalAlign: 'middle' }}></span>
               </Styled.h6>
             </Box>
             <Box
