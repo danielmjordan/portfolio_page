@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "clean": "gatsby clean"
   },
   "dependencies": {
     "@hashinteractive/gatsby-theme-reactor": "^1.0.5",

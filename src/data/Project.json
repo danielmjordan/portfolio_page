@@ -1,19 +1,19 @@
 [
   {
-    "name": "Project One",
+    "name": "ES Apparel",
     "url": "https://example.com",
-    "technologies": ["Nuxt.js", "Bootstrap CSS", "GSAP"],
-    "start": "2018-10-15",
-    "end": "2020-01-15",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "technologies": ["React", "Express", "PostgreSQL" ],
+    "start": "2020-01-20",
+    "end": "2020-02-29",
+    "description": " A full-stack Ratings and Reviews microservice built out for an E-commerce application. Renders pertinent user-provided product information and allows users to submit reviews of their own. Overall contributes to a better E-commerce experience, allowing potential consumers to make more informed purchase decisions based upon first-hand, user-provided feedback and experience."
   },
   {
-    "name": "Project Two",
-    "url": "https://example.com",
-    "technologies": ["Nuxt.js", "Firebase", "Bulma CSS"],
-    "start": "2018-10-15",
-    "end": "2020-01-15",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "name": "Choss Finder",
+    "url": "https://github.com/danielmjordan/chossfinder",
+    "technologies": ["React Native", "Expo"],
+    "start": "2020-02-29",
+    "end": "2020-03-06",
+    "description": "A quick proof-of-concept application allowing users to access a curated list of top-rated rock climbs based on their current location."
   },
   {
     "name": "Project Three",
