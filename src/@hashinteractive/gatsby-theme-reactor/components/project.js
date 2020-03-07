@@ -60,14 +60,14 @@ const Project = ({project}) => {
               <Styled.h2
                 sx={{
                   my: 0,
-                  color: theme => theme.colors.gray[8],
+                  color: theme => theme.colors.gray[7],
                 }}>
                 { name }
               </Styled.h2>
               <Styled.h6
                 sx={{
                   my: 0,
-                  color: theme => theme.colors.gray[4],
+                  color: theme => theme.colors.gray[5],
                   fontWeight: 'medium'
                 }}>
                 { start } - { end }

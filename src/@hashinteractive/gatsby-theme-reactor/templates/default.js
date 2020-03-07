@@ -170,7 +170,7 @@ const Default = () => {
                         backgroundColor: theme => theme.colors.gray[3],
                         fontSize: 0,
                         border: 0,
-                        borderRight: 5,
+                        borderLeft: 2,
                         boxShadow: 'md',
                         borderColor: theme => theme.colors.gray[5],
                         borderStyle: 'solid',
@@ -191,7 +191,7 @@ const Default = () => {
               }}>
               <h1
                 sx={{
-                  color: theme => theme.colors.gray[8],
+                  color: theme => theme.colors.gray[7],
                   fontSize: ['55px', '75px'],
                   textAlign: 'right',
                   lineHeight: 1.15,
@@ -201,7 +201,7 @@ const Default = () => {
                  sx={{
                    textDecoration: 'none',
                    border: 0,
-                   borderBottom: 6,
+                   borderBottom: 5,
                    borderStyle: 'solid',
                    borderColor: theme => theme.colors.gray[3],
                  }}

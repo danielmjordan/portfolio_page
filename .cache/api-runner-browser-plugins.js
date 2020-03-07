@@ -12,5 +12,5 @@ module.exports = [{
       options: {"plugins":[]},
     },{
       plugin: require('../node_modules/gatsby-plugin-web-font-loader/gatsby-browser.js'),
-      options: {"plugins":[],"google":{"families":["Oswald","Oswald medium","Oxanium","PT serif"]}},
+      options: {"plugins":[],"google":{"families":["PT serif"]}},
     }]
