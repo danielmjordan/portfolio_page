@@ -3,16 +3,10 @@ import { jsx, Styled, Container, Flex, Box } from 'theme-ui'
 import { useStaticQuery, graphql } from 'gatsby'
 import Github from '../assets/github.svg'
 import LinkedIn from '../assets/linkedin.svg'
-import Twitter from '../assets/twitter.svg'
-import Medium from '../assets/medium.svg'
-import StackOverflow from '../assets/stackoverflow.svg'
 
 const icons = {
   github: Github,
-  linkedin: LinkedIn,
-  twitter: Twitter,
-  medium: Medium,
-  stackoverflow: StackOverflow,
+  linkedin: LinkedIn
 }
 
 const Footer = (props) => {

@@ -43,7 +43,7 @@ const Subnav = () => {
                 pt: 16,
                 border: 0,
                 borderTop: 6,
-                borderColor: theme => theme.colors.orange[3],
+                borderColor: theme => theme.colors.gray[3],
                 borderStyle: 'solid'
               }}></span>
           <Styled.h3
@@ -118,7 +118,7 @@ const Subnav = () => {
                               },
                               '&:hover': {
                                 boxShadow: 'lg',
-                                bg: theme => theme.colors.blue[3],
+                                bg: theme => theme.colors.gray[6],
                                 path: { fill: 'white' },
                               }
                             }} />

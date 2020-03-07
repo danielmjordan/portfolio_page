@@ -3,7 +3,7 @@
 import { jsx, Flex, Box, Styled } from 'theme-ui'
 import { Link } from 'gatsby'
 
-const Project = ({project}) => {
+const Project = ({ project }) => {
   const { name, description, technologies, start, end, slug } = project
   return (
     <Box

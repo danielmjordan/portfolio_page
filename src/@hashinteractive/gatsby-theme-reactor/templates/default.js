@@ -177,7 +177,7 @@ const Default = () => {
                         p: 2,
                         px: 3,
                         '&:hover': {
-                          backgroundColor: theme => theme.colors.blue[8],
+                          backgroundColor: theme => theme.colors.gray[8],
                           color: 'white'
                         }
                       }}>{ skill }</span>
@@ -191,11 +191,11 @@ const Default = () => {
               }}>
               <h1
                 sx={{
-                  color: theme => theme.colors.blue[8],
+                  color: theme => theme.colors.gray[8],
                   fontSize: ['65px', '85px'],
                   textAlign: 'right',
                   lineHeight: 1.15,
-                  textShadow: '3px 3px 0 lightblue'
+                  textShadow: '3px 3px 0 lightgray'
                 }}>
                 <u
                  sx={{
@@ -225,7 +225,7 @@ const Default = () => {
               <Styled.h6
                 sx={{
                   mb: 0,
-                  color: theme => theme.colors.gray[4]
+                  color: theme => theme.colors.gray[5]
                 }}>
                 My Projects
                 <span sx={{

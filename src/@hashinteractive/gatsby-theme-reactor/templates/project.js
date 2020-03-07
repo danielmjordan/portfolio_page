@@ -54,7 +54,7 @@ export default ({ data: { project = {} } }) => {
                         <Styled.h1
                           sx={{
                             position: 'relative',
-                            textShadow: '-3px 3px lightblue',
+                            textShadow: '-1px 1px lightgray',
                             mb: 0,
                             color: 'primary',
                             zIndex: 99

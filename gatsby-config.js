@@ -14,7 +14,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Oswald', 'Oswald medium', 'Oxanium']
+          families: ['PT serif']
         }
       }
     }
