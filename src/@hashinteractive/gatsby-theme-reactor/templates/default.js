@@ -242,7 +242,7 @@ const Default = () => {
                   color: 'primary',
                   mt: 0
                 }}>
-                Portfolio of Work
+                Recent Work
               </Styled.h1>
             </Box>
             <Box

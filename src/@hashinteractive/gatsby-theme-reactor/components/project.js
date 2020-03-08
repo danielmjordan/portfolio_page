@@ -20,7 +20,7 @@ const Project = ({project}) => {
           top: -30,
           left: -30,
           borderRadius: 'full',
-          bg: theme => theme.colors.gray[5],
+          bg: theme => theme.colors.gray[6],
           width: 100,
           height: 100
         }}
@@ -67,8 +67,8 @@ const Project = ({project}) => {
               <Styled.h6
                 sx={{
                   my: 0,
-                  color: theme => theme.colors.gray[5],
-                  fontWeight: 'medium'
+                  color: theme => theme.colors.orange[4],
+                  fontWeight: 'bold'
                 }}>
                 { start } - { end }
               </Styled.h6>
