@@ -4,7 +4,7 @@ import { jsx, Flex, Box, Styled } from 'theme-ui'
 import { Link } from 'gatsby'
 
 const Project = ({project}) => {
-  const { name, description, technologies, start, end, slug } = project
+  const { name, description, technologies, slug } = project
   return (
     <Box
       sx={{
@@ -64,14 +64,14 @@ const Project = ({project}) => {
                 }}>
                 { name }
               </Styled.h2>
-              <Styled.h6
+              {/* <Styled.h6
                 sx={{
                   my: 0,
                   color: theme => theme.colors.orange[4],
                   fontWeight: 'bold'
                 }}>
                 { start } - { end }
-              </Styled.h6>
+              </Styled.h6> */}
             </Box>
             <Box
               sx={{

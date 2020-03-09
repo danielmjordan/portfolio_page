@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 
 export default ({ data: { project = {} } }) => {
-  const { name, start, end, description, technologies, image, url } = project
+  const { name, description, technologies, image, url } = project
   return (
     <Layout>
       <Container
@@ -61,14 +61,6 @@ export default ({ data: { project = {} } }) => {
                           }}>
                           { name }
                         </Styled.h1>
-                        <Styled.h6
-                          sx={{
-                            pl: 5,
-                            color: theme => theme.colors.gray[4],
-                            fontWeight: 'medium'
-                          }}>
-                          { start } - { end }
-                        </Styled.h6>
                       </div>
                     </Box>
                     <Box
@@ -160,8 +152,6 @@ export const query = graphql`
       image {
         publicURL
       }
-      start(formatString: "MMM Do YYYY")
-      end(formatString: "MMM Do YYYY")
     }
   }
 `

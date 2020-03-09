@@ -93,7 +93,7 @@ const Subnav = () => {
                   <Flex
                     sx={{
                       listStyle: 'none',
-                      marginRight: 70,
+                      marginRight: 75,
                       p: 0,
                       justifyContent: ['flext-start', 'flex-end']
                     }}
