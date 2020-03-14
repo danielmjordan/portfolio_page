@@ -5,7 +5,7 @@ export default {
   colors: {
     ...tailwind.colors,
     primary: tailwind.colors.gray[7],
-    secondary: tailwind.colors.gray[4],
+    secondary: tailwind.colors.orange[3],
     tertiary: tailwind.colors.gray[2]
   },
   sizes: {
