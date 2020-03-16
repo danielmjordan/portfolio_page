@@ -1,9 +1,8 @@
-
 /** @jsx jsx */
 import { jsx, Flex, Box, Styled } from 'theme-ui'
 import { Link } from 'gatsby'
 
-const Project = ({project}) => {
+const Project = ({ project }) => {
   const { name, description, technologies, slug } = project
   return (
     <Box
@@ -92,7 +91,7 @@ const Project = ({project}) => {
                       px: 3,
                       py: 1,
                       mr: 3,
-                      mb: [2, 0],
+                      mb: [2, 2],
                       color: 'grayDark',
                       bg: theme => theme.colors.gray[2]
                     }}>{ tech }</div>

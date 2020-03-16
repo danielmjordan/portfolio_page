@@ -2,7 +2,8 @@
   {
     "name": "ES Apparel",
     "url": "https://example.com",
-    "technologies": ["React", "Express", "PostgreSQL", "MaterialUI" ],
+    "technologies": ["React", "Express", "PostgreSQL", "MaterialUI", "Artillery", "New Relic",
+    "AWS-EC2" ],
     "start": "2020-01-20",
     "end": "2020-02-15",
     "description": " A full-stack Ratings and Reviews microservice built out for an E-commerce application. Renders pertinent user-provided product information and allows users to submit reviews of their own. Overall contributes to a better E-commerce experience, allowing potential consumers to make more informed purchase decisions based upon first-hand, user-provided feedback and experience."

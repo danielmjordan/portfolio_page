@@ -79,6 +79,7 @@ export default ({ data: { project = {} } }) => {
                           sx={{
                             fontSize: '0.75rem',
                             border: 0,
+                            marginBottom: 2,
                             borderLeft: 3,
                             borderStyle: 'solid',
                             borderColor: theme => theme.colors.gray[4],
