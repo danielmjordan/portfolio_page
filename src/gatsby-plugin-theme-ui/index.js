@@ -14,7 +14,7 @@ export default {
   },
   fonts: {
     ...tailwind.fonts,
-    heading: `"PT serif", ${tailwind.fonts.sans}`,
-    body: `"PT serif", ${tailwind.fonts.sans}`
+    heading: `"Open Sans", ${tailwind.fonts.sans}`,
+    body: `"Open Sans", ${tailwind.fonts.sans}`
   }
 }

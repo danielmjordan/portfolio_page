@@ -64,14 +64,6 @@ const Project = ({project}) => {
                 }}>
                 { name }
               </Styled.h2>
-              {/* <Styled.h6
-                sx={{
-                  my: 0,
-                  color: theme => theme.colors.orange[4],
-                  fontWeight: 'bold'
-                }}>
-                { start } - { end }
-              </Styled.h6> */}
             </Box>
             <Box
               sx={{
