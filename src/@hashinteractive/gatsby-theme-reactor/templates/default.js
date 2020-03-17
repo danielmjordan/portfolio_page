@@ -10,7 +10,7 @@ import Portfolio from '../components/portfolio'
 import Contact from '../components/contact'
 
 const Default = () => {
-  const { bio: { name, description, title, skills } } = useStaticQuery(graphql`
+  const { bio: { description, title, skills } } = useStaticQuery(graphql`
     query {
       bio {
         description
@@ -52,14 +52,6 @@ const Default = () => {
                   justifyContent: 'center'
                 }}>
                 <Box>
-                  <Styled.h6
-                    sx={{
-                      mb: 0,
-                      color: 'grayDark'
-                    }}>
-                    { name }
-                    <span sx={{ bg: theme => theme.colors.orange[3], ml: 3, width: 10, height: 1, display: 'inline-block', verticalAlign: 'middle' }}></span>
-                  </Styled.h6>
                   <Styled.h1
                     sx={{
                       mt: 0,
@@ -67,9 +59,16 @@ const Default = () => {
                     }}>
                     About Me
                   </Styled.h1>
+                  <Styled.h6
+                    sx={{
+                      mb: 0,
+                      color: 'primary'
+                    }}>
+                    <span sx={{ bg: theme => theme.colors.orange[3], ml: 0, width: 20, height: 1, display: 'inline-block', verticalAlign: 'middle' }}></span>
+                  </Styled.h6>
                 </Box>
                 <Box>
-                  <p sx={{ color: 'grayDark' }}>{ description }</p>
+                  <p sx={{ color: 'primary' }}>{ description }</p>
                 </Box>
                 <Box
                   sx={{
@@ -96,7 +95,7 @@ const Default = () => {
                   <span sx={{ bg: theme => theme.colors.orange[3], ml: '-14px', mr: 4, width: 10, height: '3px', display: 'inline-block', verticalAlign: 'middle' }}></span>
                   <AnchorLink
                     sx={{
-                      color: 'grayDark',
+                      color: 'primary',
                       textTransform: 'uppercase',
                       fontSize: 0,
                       fontWeight: 'extrabold',
@@ -133,7 +132,9 @@ const Default = () => {
                   <Styled.h6
                     sx={{
                       mb: 0,
-                      color: 'grayDark'
+                      color: 'primary',
+                      textTransform: 'uppercase',
+                      fontWeight: 'extrabold'
                     }}>
                     My Skills
                     <span sx={{
@@ -195,7 +196,6 @@ const Default = () => {
                   fontSize: ['55px', '75px'],
                   textAlign: 'right',
                   lineHeight: 1.15,
-                  textShadow: '2px 2px 0 lightgray'
                 }}>
                 <u
                  sx={{
@@ -225,11 +225,13 @@ const Default = () => {
               <Styled.h6
                 sx={{
                   mb: 0,
-                  color: theme => theme.colors.orange[4]
+                  color: 'primary',
+                  textTransform: 'uppercase',
+                  fontWeight: 'extrabold'
                 }}>
                 My Projects
                 <span sx={{
-                  bg: theme => theme.colors.gray[3],
+                  bg: theme => theme.colors.orange[3],
                   ml: 3,
                   width: 10,
                   height: 1,

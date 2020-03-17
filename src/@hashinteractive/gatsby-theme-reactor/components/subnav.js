@@ -36,6 +36,20 @@ const Subnav = () => {
             width: ['full', '1/2'],
             position: 'relative'
           }}>
+          <Styled.h3
+           sx={{
+             fontWeight: 'normal'
+           }}>
+             { greeting }
+          </Styled.h3>
+          <Styled.h6
+            sx={{
+              color: 'primary',
+              fontWeight: 800,
+              textTransform: 'uppercase',
+            }}>
+            { title }
+          </Styled.h6>
             <span
               sx={{
                 position: 'absolute',
@@ -46,18 +60,6 @@ const Subnav = () => {
                 borderColor: theme => theme.colors.orange[3],
                 borderStyle: 'solid'
               }}></span>
-          <Styled.h3
-           sx={{
-             fontWeight: 'normal'
-           }}>
-             { greeting }
-          </Styled.h3>
-          <Styled.h6
-            sx={{
-              color: theme => theme.colors.gray[5]
-            }}>
-            { title }
-          </Styled.h6>
         </Box>
         <Box
           sx={{
@@ -76,7 +78,7 @@ const Subnav = () => {
               <Styled.h6
                 sx={{
                   textTransform: 'uppercase',
-                  color: theme => theme.colors.gray[6],
+                  color: 'primary',
                   fontSize: 0
                 }}>
                 <span sx={{ bg: theme => theme.colors.orange[3], mr: 3, width: 10, height: 1, display: 'inline-block', verticalAlign: 'middle' }}></span>

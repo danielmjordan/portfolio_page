@@ -28,10 +28,12 @@ const Header = (props) => {
             <AnchorLink
               sx={{
                 textDecoration: 'none',
-                color: 'primary'
+                color: 'primary',
+                textTransform: 'uppercase',
+                fontWeight: 'extrabold',
               }}
               to="/">
-              <Styled.h2
+              <Styled.h1
                 sx={{
                   display: 'inline-block',
                   fontWeight: 'extrabold',
@@ -40,7 +42,7 @@ const Header = (props) => {
                   verticalAlign: 'bottom'
                 }}>
                 { siteMetadata.title }
-              </Styled.h2>
+              </Styled.h1>
             </AnchorLink>
           </Box>
           <Box
