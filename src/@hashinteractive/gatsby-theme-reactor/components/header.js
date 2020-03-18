@@ -33,16 +33,16 @@ const Header = (props) => {
                 fontWeight: 'extrabold',
               }}
               to="/">
-              <Styled.h1
+              <Styled.h2
                 sx={{
                   display: 'inline-block',
-                  fontWeight: 'extrabold',
+                  fontWeight: 700,
                   my: 0,
                   mx: 2,
                   verticalAlign: 'bottom'
                 }}>
                 { siteMetadata.title }
-              </Styled.h1>
+              </Styled.h2>
             </AnchorLink>
           </Box>
           <Box
