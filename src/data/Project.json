@@ -1,7 +1,7 @@
 [
   {
     "name": "ES Apparel",
-    "url": "https://example.com",
+    "url": "https://github.com/Exact-Science/es_apparel_fe",
     "technologies": ["React", "Express", "PostgreSQL", "MaterialUI", "Artillery", "New Relic",
     "AWS-EC2" ],
     "start": "2020-01-20",
