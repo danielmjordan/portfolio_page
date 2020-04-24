@@ -36,7 +36,7 @@ const Header = (props) => {
               <Styled.h2
                 sx={{
                   display: 'inline-block',
-                  fontWeight: 700,
+                  fontWeight: 800,
                   my: 0,
                   mx: 2,
                   verticalAlign: 'bottom'
