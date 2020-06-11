@@ -1,7 +1,7 @@
 [
 	{
 		"name": "MovieApp",
-		"url": "https://github.com/danielmjordan/movie-app-vue",
+		"url": "https://movie-app-d170f1.netlify.app/",
 		"technologies": ["Vue", "Vuex", "Vuetify", "Jest"],
 		"start": "2020-04-19",
 		"end": "2020-04-23",
