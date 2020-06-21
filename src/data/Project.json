@@ -5,7 +5,7 @@
 		"technologies": ["Vue", "Vuex", "Vuetify", "Jest"],
 		"start": "2020-04-19",
 		"end": "2020-04-23",
-		"description": "A single-page application allowing users to browse top-rated films, search for films, and add films to a favorites list. Built in order to gain some exposure to the Vue framework."
+		"description": "A single-page application allowing users to browse top-rated films, search for films, and add films to a favorites list. Favorites are persisted using the browser's local storage. Built in order to gain some exposure to the Vue framework."
 	},
 	{
 		"name": "ES Apparel",
