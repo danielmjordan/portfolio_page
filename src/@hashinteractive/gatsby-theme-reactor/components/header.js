@@ -129,7 +129,8 @@ const Header = (props) => {
 							<li sx={{ p: 2 }}>
 								<a
 									href={Resume}
-									download
+									target="_blank"
+									rel="noopener noreferrer"
 									sx={{
 										color: 'primary',
 										textTransform: 'uppercase',
@@ -137,7 +138,6 @@ const Header = (props) => {
 										fontWeight: 'extrabold',
 										textDecoration: 'none',
 									}}
-									to="/#contact"
 								>
 									Resume
 								</a>
