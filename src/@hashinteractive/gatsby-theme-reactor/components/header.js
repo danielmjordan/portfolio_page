@@ -31,7 +31,6 @@ const Header = (props) => {
 					>
 						<AnchorLink
 							sx={{
-								textDecoration: 'none',
 								color: 'primary',
 								textTransform: 'uppercase',
 								fontWeight: 'extrabold',
@@ -41,7 +40,7 @@ const Header = (props) => {
 							<Styled.h2
 								sx={{
 									display: 'inline-block',
-									fontWeight: 800,
+									fontWeight: 'extrabold',
 									my: 0,
 									mx: 2,
 									verticalAlign: 'bottom',
