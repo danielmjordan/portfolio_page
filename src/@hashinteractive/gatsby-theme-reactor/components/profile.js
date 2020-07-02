@@ -15,7 +15,7 @@ const Profile = () => {
 						publicURL
 						name
 						childImageSharp {
-							fluid {
+							fluid(quality: 100) {
 								aspectRatio
 								base64
 								sizes
@@ -49,24 +49,28 @@ const Profile = () => {
 				mb: '50px',
 			}}
 		>
-			<Img
-				sx={{
-					top: ['15px', '30px'],
-					right: ['-15px', '-35px'],
-					boxShadow: 'lg',
-					borderRadius: 'lg',
-					position: 'relative',
-					maxWidth: 'full',
-				}}
+			<div
+				role="img"
 				onMouseEnter={() => {
 					setImageSource(profileAlt.node.childImageSharp.fluid);
 				}}
 				onMouseLeave={() => {
 					setImageSource(profile.node.childImageSharp.fluid);
 				}}
-				fluid={imageSource}
-				alt="Profile"
-			/>
+			>
+				<Img
+					sx={{
+						top: ['15px', '30px'],
+						right: ['-15px', '-35px'],
+						boxShadow: 'lg',
+						borderRadius: 'lg',
+						position: 'relative',
+						maxWidth: 'full',
+					}}
+					fluid={imageSource}
+					alt="Profile"
+				/>
+			</div>
 		</div>
 	);
 };
