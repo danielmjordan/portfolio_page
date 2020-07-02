@@ -5,61 +5,79 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import Header from './header';
 import Footer from './footer';
+import { useStaticQuery, graphql } from 'gatsby';
 
-const Layout = ({ children }) => (
-	<>
-		<Helmet>
-			<link rel="icon" href={'/images/favicon.ico'} />
-			<link
-				rel="icon"
-				type="image/png"
-				sizes="16x16"
-				href={'/images/favicon-16x16.png'}
-			/>
-			<link
-				rel="icon"
-				type="image/png"
-				sizes="32x32"
-				href={'/images/favicon-32x32.png'}
-			/>
-			<link
-				rel="apple-touch-icon"
-				sizes="180x180"
-				href={'/images/apple-touch-icon.png'}
-			/>
-		</Helmet>
-		<div
-			sx={{
-				display: 'flex',
-				flexDirection: 'column',
-				// set this to `minHeight: '100vh'` for full viewport height
-				minHeight: '100vh',
-			}}
-		>
-			<Header
+const Layout = ({ children }) => {
+	const {
+		bio: { description, title, location, name },
+	} = useStaticQuery(graphql`
+		query {
+			bio {
+				description
+				title
+				name
+				skills
+			}
+		}
+	`);
+
+	return (
+		<>
+			<Helmet>
+				<title>{name}</title>
+				<meta name="description" content={description}></meta>
+				<link rel="icon" href={'/images/favicon.ico'} />
+				<link
+					rel="icon"
+					type="image/png"
+					sizes="16x16"
+					href={'/images/favicon-16x16.png'}
+				/>
+				<link
+					rel="icon"
+					type="image/png"
+					sizes="32x32"
+					href={'/images/favicon-32x32.png'}
+				/>
+				<link
+					rel="apple-touch-icon"
+					sizes="180x180"
+					href={'/images/apple-touch-icon.png'}
+				/>
+			</Helmet>
+			<div
 				sx={{
-					borderBottom: 4,
-					borderColor: 'light',
-					borderStyle: 'solid',
-					width: '100%',
-				}}
-			/>
-			<main
-				sx={{
-					width: '100%',
-					flex: '1 1 auto',
+					display: 'flex',
+					flexDirection: 'column',
+					// set this to `minHeight: '100vh'` for full viewport height
+					minHeight: '100vh',
 				}}
 			>
-				{children}
-			</main>
-			<Footer
-				sx={{
-					bg: 'primary',
-					color: 'white',
-					width: '100%',
-				}}
-			/>
-		</div>
-	</>
-);
+				<Header
+					sx={{
+						borderBottom: 4,
+						borderColor: 'light',
+						borderStyle: 'solid',
+						width: '100%',
+					}}
+				/>
+				<main
+					sx={{
+						width: '100%',
+						flex: '1 1 auto',
+					}}
+				>
+					{children}
+				</main>
+				<Footer
+					sx={{
+						bg: 'primary',
+						color: 'white',
+						width: '100%',
+					}}
+				/>
+			</div>
+		</>
+	);
+};
 export default Layout;
