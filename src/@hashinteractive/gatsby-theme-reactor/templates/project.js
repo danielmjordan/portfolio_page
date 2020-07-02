@@ -1,7 +1,8 @@
 /** @jsx jsx */
-import { jsx, Container, Flex, Box, Styled } from "theme-ui";
-import { graphql } from "gatsby";
-import Layout from "../components/layout";
+import { jsx, Container, Flex, Box, Styled } from 'theme-ui';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
+import Layout from '../components/layout';
 
 export default ({ data: { project = {} } }) => {
 	const { name, description, technologies, image, url } = project;
@@ -11,39 +12,39 @@ export default ({ data: { project = {} } }) => {
 				<Flex>
 					<Box
 						sx={{
-							width: "full",
+							width: 'full',
 							py: 5,
 						}}
 					>
 						<Flex
 							sx={{
-								flexDirection: "column",
+								flexDirection: 'column',
 							}}
 						>
 							<Box>
 								<Flex
 									sx={{
-										flexWrap: "wrap",
+										flexWrap: 'wrap',
 									}}
 								>
 									<Box
 										sx={{
-											width: ["full", "1/2"],
+											width: ['full', '1/2'],
 											mb: [5, 0],
 										}}
 									>
 										<Box
 											sx={{
-												position: "relative",
+												position: 'relative',
 											}}
 										>
 											<div
 												sx={{
-													position: "absolute",
-													boxShadow: "xl",
+													position: 'absolute',
+													boxShadow: 'xl',
 													top: -15,
 													left: [-15, -40],
-													borderRadius: "full",
+													borderRadius: 'full',
 													bg: (theme) => theme.colors.gray[4],
 													width: 100,
 													height: 100,
@@ -51,16 +52,16 @@ export default ({ data: { project = {} } }) => {
 											/>
 											<div
 												sx={{
-													position: "relative",
+													position: 'relative',
 													zIndex: 99,
-													display: "inline-block",
+													display: 'inline-block',
 												}}
 											>
 												<Styled.h1
 													sx={{
-														position: "relative",
+														position: 'relative',
 														mb: 0,
-														color: "primary",
+														color: 'primary',
 														zIndex: 99,
 													}}
 												>
@@ -77,18 +78,18 @@ export default ({ data: { project = {} } }) => {
 										</Box>
 										<Flex
 											sx={{
-												flexWrap: "wrap",
+												flexWrap: 'wrap',
 											}}
 										>
 											{technologies.map((tech, i) => (
 												<div
 													key={i}
 													sx={{
-														fontSize: "0.75rem",
+														fontSize: '0.75rem',
 														border: 0,
 														marginBottom: 2,
 														borderLeft: 3,
-														borderStyle: "solid",
+														borderStyle: 'solid',
 														borderColor: (theme) => theme.colors.gray[4],
 														px: 3,
 														py: 1,
@@ -110,14 +111,14 @@ export default ({ data: { project = {} } }) => {
 												target="_blank"
 												rel="noopener noreferrer"
 												sx={{
-													variant: "buttons.simple",
-													display: "inline-block",
-													textDecoration: "none",
+													variant: 'buttons.simple',
+													display: 'inline-block',
+													textDecoration: 'none',
 													fontSize: 2,
 													py: 3,
-													boxShadow: "lg",
+													boxShadow: 'lg',
 													bg: (theme) => theme.colors.gray[5],
-													"&:hover": {
+													'&:hover': {
 														bg: (theme) => theme.colors.gray[6],
 													},
 												}}
@@ -125,10 +126,10 @@ export default ({ data: { project = {} } }) => {
 												<span>{name}</span>
 												<svg
 													sx={{
-														verticalAlign: "middle",
+														verticalAlign: 'middle',
 														ml: 2,
-														position: "relative",
-														top: "-1px",
+														position: 'relative',
+														top: '-1px',
 													}}
 													fill="currentColor"
 													preserveAspectRatio="xMidYMid meet"
@@ -145,18 +146,18 @@ export default ({ data: { project = {} } }) => {
 									</Box>
 									<Box
 										sx={{
-											ml: [0, "16.6666%"],
-											width: ["full", "1/3"],
+											ml: [0, '16.6666%'],
+											width: ['full', '1/3'],
 										}}
 									>
 										{image && (
-											<img
+											<Img
 												sx={{
 													borderRadius: 5,
-													boxShadow: "2xl",
-													width: ["full"],
+													boxShadow: '2xl',
+													width: ['full'],
 												}}
-												src={image.publicURL}
+												fluid={image.childImageSharp.fluid}
 												alt={name}
 											/>
 										)}
@@ -181,6 +182,15 @@ export const query = graphql`
 			id
 			image {
 				publicURL
+				childImageSharp {
+					fluid(quality: 100) {
+						aspectRatio
+						base64
+						sizes
+						src
+						srcSet
+					}
+				}
 			}
 		}
 	}
