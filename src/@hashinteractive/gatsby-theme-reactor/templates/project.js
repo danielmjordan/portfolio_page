@@ -183,7 +183,7 @@ export const query = graphql`
 			image {
 				publicURL
 				childImageSharp {
-					fluid(quality: 100) {
+					fluid(quality: 50) {
 						aspectRatio
 						base64
 						sizes

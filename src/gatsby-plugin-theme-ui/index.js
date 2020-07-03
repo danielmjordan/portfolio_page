@@ -14,7 +14,7 @@ export default {
 	},
 	fonts: {
 		...tailwind.fonts,
-		heading: [`'Open Sans', ${tailwind.fonts.sans}`],
-		body: [`'Open Sans', ${tailwind.fonts.sans}`],
+		heading: [`sans-serif`],
+		body: [`sans-serif`],
 	},
 };
