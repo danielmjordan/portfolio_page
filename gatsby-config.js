@@ -19,14 +19,6 @@ module.exports = {
 				},
 			},
 		},
-		{
-			resolve: 'gatsby-plugin-web-font-loader',
-			options: {
-				google: {
-					families: ['Open Sans'],
-				},
-			},
-		},
 	],
 	siteMetadata: {
 		title: `Daniel M. Jordan`,

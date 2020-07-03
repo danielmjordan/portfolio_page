@@ -3,9 +3,9 @@
 import { jsx } from 'theme-ui';
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { useStaticQuery, graphql } from 'gatsby';
 import Header from './header';
 import Footer from './footer';
-import { useStaticQuery, graphql } from 'gatsby';
 
 const Layout = ({ children }) => {
 	const {
@@ -24,8 +24,11 @@ const Layout = ({ children }) => {
 	return (
 		<>
 			<Helmet>
-				<title>{name}</title>
+				<title>Daniel M. Jordan</title>
 				<meta name="description" content={description}></meta>
+				<meta name="author" content={name}></meta>
+				<meta charset="utf-8"></meta>
+				<html lang="en-US"></html>
 				<link rel="icon" href={'/images/favicon.ico'} />
 				<link
 					rel="icon"
