@@ -15,7 +15,7 @@ const Profile = () => {
 						publicURL
 						name
 						childImageSharp {
-							fluid(quality: 100) {
+							fluid(quality: 50) {
 								aspectRatio
 								base64
 								sizes
