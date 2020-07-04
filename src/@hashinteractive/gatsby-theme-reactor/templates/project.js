@@ -4,6 +4,30 @@ import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import Layout from '../components/layout';
 
+export const query = graphql`
+	query($projectID: String!) {
+		project(id: { eq: $projectID }) {
+			name
+			description
+			technologies
+			url
+			id
+			image {
+				publicURL
+				childImageSharp {
+					fluid(quality: 50) {
+						aspectRatio
+						base64
+						sizes
+						src
+						srcSet
+					}
+				}
+			}
+		}
+	}
+`;
+
 export default ({ data: { project = {} } }) => {
 	const { name, description, technologies, image, url } = project;
 	return (
@@ -171,27 +195,3 @@ export default ({ data: { project = {} } }) => {
 		</Layout>
 	);
 };
-
-export const query = graphql`
-	query($projectID: String!) {
-		project(id: { eq: $projectID }) {
-			name
-			description
-			technologies
-			url
-			id
-			image {
-				publicURL
-				childImageSharp {
-					fluid(quality: 50) {
-						aspectRatio
-						base64
-						sizes
-						src
-						srcSet
-					}
-				}
-			}
-		}
-	}
-`;
