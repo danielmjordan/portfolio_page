@@ -60,14 +60,13 @@ const Contact = () => {
 	});
 
 	return (
-		<Flex id="contact">
+		<Flex id='contact'>
 			<Box
 				sx={{
 					height: '500px',
 					width: 'full',
 					position: 'relative',
-				}}
-			>
+				}}>
 				<div
 					sx={{
 						position: 'absolute',
@@ -76,21 +75,18 @@ const Contact = () => {
 						right: 0,
 						bottom: 0,
 					}}
-					ref={map}
-				></div>
+					ref={map}></div>
 				<Flex
 					sx={{
 						height: 'full',
 						position: 'relative',
 						zIndex: 99,
-					}}
-				>
+					}}>
 					<Box
 						sx={{
 							width: 'full',
 							position: 'relative',
-						}}
-					>
+						}}>
 						<div
 							sx={{
 								display: 'flex',
@@ -115,14 +111,12 @@ const Contact = () => {
 									return `rgba(${r}, ${g}, ${b}, 0.9)`;
 								},
 								color: 'white',
-							}}
-						>
+							}}>
 							<Styled.h2
 								sx={{
 									color: 'white',
 									mb: 4,
-								}}
-							>
+								}}>
 								Contact Me
 							</Styled.h2>
 							<div>
@@ -132,8 +126,7 @@ const Contact = () => {
 											display: 'flex',
 											alignItems: 'center',
 											mb: 3,
-										}}
-									>
+										}}>
 										<Envelope
 											sx={{
 												width: 25,
@@ -143,8 +136,7 @@ const Contact = () => {
 										<span
 											sx={{
 												ml: 3,
-											}}
-										>
+											}}>
 											{email}
 										</span>
 									</div>
@@ -155,8 +147,7 @@ const Contact = () => {
 											display: 'flex',
 											alignItems: 'center',
 											mb: 3,
-										}}
-									>
+										}}>
 										<Mobile
 											sx={{
 												width: '20px',
@@ -166,8 +157,7 @@ const Contact = () => {
 										<span
 											sx={{
 												ml: 3,
-											}}
-										>
+											}}>
 											{phone}
 										</span>
 									</div>
@@ -178,8 +168,7 @@ const Contact = () => {
 											display: 'flex',
 											alignItems: 'center',
 											mb: 3,
-										}}
-									>
+										}}>
 										<Pin
 											sx={{
 												width: '20px',
@@ -189,8 +178,7 @@ const Contact = () => {
 										<span
 											sx={{
 												ml: 3,
-											}}
-										>
+											}}>
 											{location}
 										</span>
 									</div>

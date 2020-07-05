@@ -38,30 +38,25 @@ export default ({ data: { project = {} } }) => {
 						sx={{
 							width: 'full',
 							py: 5,
-						}}
-					>
+						}}>
 						<Flex
 							sx={{
 								flexDirection: 'column',
-							}}
-						>
+							}}>
 							<Box>
 								<Flex
 									sx={{
 										flexWrap: 'wrap',
-									}}
-								>
+									}}>
 									<Box
 										sx={{
 											width: ['full', '1/2'],
 											mb: [5, 0],
-										}}
-									>
+										}}>
 										<Box
 											sx={{
 												position: 'relative',
-											}}
-										>
+											}}>
 											<div
 												sx={{
 													position: 'absolute',
@@ -79,16 +74,14 @@ export default ({ data: { project = {} } }) => {
 													position: 'relative',
 													zIndex: 99,
 													display: 'inline-block',
-												}}
-											>
+												}}>
 												<Styled.h1
 													sx={{
 														position: 'relative',
 														mb: 0,
 														color: 'primary',
 														zIndex: 99,
-													}}
-												>
+													}}>
 													{name}
 												</Styled.h1>
 											</div>
@@ -96,15 +89,13 @@ export default ({ data: { project = {} } }) => {
 										<Box
 											sx={{
 												my: 4,
-											}}
-										>
+											}}>
 											<p>{description}</p>
 										</Box>
 										<Flex
 											sx={{
 												flexWrap: 'wrap',
-											}}
-										>
+											}}>
 											{technologies.map((tech, i) => (
 												<div
 													key={i}
@@ -119,8 +110,7 @@ export default ({ data: { project = {} } }) => {
 														py: 1,
 														mr: 3,
 														bg: (theme) => theme.colors.gray[2],
-													}}
-												>
+													}}>
 													{tech}
 												</div>
 											))}
@@ -128,12 +118,11 @@ export default ({ data: { project = {} } }) => {
 										<Box
 											sx={{
 												mt: [3, 4],
-											}}
-										>
+											}}>
 											<a
 												href={url}
-												target="_blank"
-												rel="noopener noreferrer"
+												target='_blank'
+												rel='noopener noreferrer'
 												sx={{
 													variant: 'buttons.simple',
 													display: 'inline-block',
@@ -145,8 +134,7 @@ export default ({ data: { project = {} } }) => {
 													'&:hover': {
 														bg: (theme) => theme.colors.gray[6],
 													},
-												}}
-											>
+												}}>
 												<span>{name}</span>
 												<svg
 													sx={{
@@ -155,14 +143,13 @@ export default ({ data: { project = {} } }) => {
 														position: 'relative',
 														top: '-1px',
 													}}
-													fill="currentColor"
-													preserveAspectRatio="xMidYMid meet"
-													height="1em"
-													width="1em"
-													viewBox="0 0 40 40"
-												>
+													fill='currentColor'
+													preserveAspectRatio='xMidYMid meet'
+													height='1em'
+													width='1em'
+													viewBox='0 0 40 40'>
 													<g>
-														<path d="m28.4 11.6c4.6 0 8.2 3.8 8.2 8.4s-3.6 8.4-8.2 8.4h-6.8v-3.2h6.8c2.8 0 5.1-2.4 5.1-5.2s-2.3-5.2-5.1-5.2h-6.8v-3.2h6.8z m-15 10v-3.2h13.2v3.2h-13.2z m-6.9-1.6c0 2.8 2.3 5.2 5.1 5.2h6.8v3.2h-6.8c-4.6 0-8.2-3.8-8.2-8.4s3.6-8.4 8.2-8.4h6.8v3.2h-6.8c-2.8 0-5.1 2.4-5.1 5.2z"></path>
+														<path d='m28.4 11.6c4.6 0 8.2 3.8 8.2 8.4s-3.6 8.4-8.2 8.4h-6.8v-3.2h6.8c2.8 0 5.1-2.4 5.1-5.2s-2.3-5.2-5.1-5.2h-6.8v-3.2h6.8z m-15 10v-3.2h13.2v3.2h-13.2z m-6.9-1.6c0 2.8 2.3 5.2 5.1 5.2h6.8v3.2h-6.8c-4.6 0-8.2-3.8-8.2-8.4s3.6-8.4 8.2-8.4h6.8v3.2h-6.8c-2.8 0-5.1 2.4-5.1 5.2z'></path>
 													</g>
 												</svg>
 											</a>
@@ -172,8 +159,7 @@ export default ({ data: { project = {} } }) => {
 										sx={{
 											ml: [0, '16.6666%'],
 											width: ['full', '1/3'],
-										}}
-									>
+										}}>
 										{image && (
 											<Img
 												sx={{

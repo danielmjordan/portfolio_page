@@ -11,8 +11,7 @@ const Project = ({ project }) => {
 				mb: 5,
 				position: 'relative',
 				width: ['full', '5/12'],
-			}}
-		>
+			}}>
 			<div
 				sx={{
 					position: 'absolute',
@@ -33,8 +32,7 @@ const Project = ({ project }) => {
 						color: 'inherit',
 					},
 				}}
-				to={slug}
-			>
+				to={slug}>
 				<Box
 					sx={{
 						bg: 'white',
@@ -51,21 +49,18 @@ const Project = ({ project }) => {
 						'&:hover': {
 							boxShadow: '2xl',
 						},
-					}}
-				>
+					}}>
 					<Flex
 						sx={{
 							flexDirection: 'column',
 							position: 'relative',
-						}}
-					>
+						}}>
 						<Box>
 							<Styled.h2
 								sx={{
 									my: 0,
 									color: (theme) => theme.colors.gray[7],
-								}}
-							>
+								}}>
 								{name}
 							</Styled.h2>
 						</Box>
@@ -73,21 +68,18 @@ const Project = ({ project }) => {
 							sx={{
 								mt: 3,
 								mb: 4,
-							}}
-						>
+							}}>
 							<p
 								sx={{
 									my: 0,
 									color: (theme) => theme.colors.gray[6],
-								}}
-							>{`${description.substring(0, 100).trim()}...`}</p>
+								}}>{`${description.substring(0, 100).trim()}...`}</p>
 						</Box>
 						<Box>
 							<Flex
 								sx={{
 									flexWrap: 'wrap',
-								}}
-							>
+								}}>
 								{technologies.map((tech, i) => (
 									<div
 										key={i}
@@ -103,8 +95,7 @@ const Project = ({ project }) => {
 											mb: [2, 2],
 											color: 'grayDark',
 											bg: (theme) => theme.colors.gray[2],
-										}}
-									>
+										}}>
 										{tech}
 									</div>
 								))}

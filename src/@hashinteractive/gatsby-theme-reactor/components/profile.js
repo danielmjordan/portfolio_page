@@ -48,17 +48,15 @@ const Profile = () => {
 				boxShadow: '2xl',
 				borderRadius: 'lg',
 				mb: '50px',
-			}}
-		>
+			}}>
 			<div
-				role="img"
+				role='img'
 				onMouseEnter={() => {
 					setImageSource(profileAlt.node.childImageSharp.fluid);
 				}}
 				onMouseLeave={() => {
 					setImageSource(profile.node.childImageSharp.fluid);
-				}}
-			>
+				}}>
 				<Img
 					sx={{
 						top: ['15px', '30px'],
@@ -69,7 +67,7 @@ const Profile = () => {
 						maxWidth: 'full',
 					}}
 					fluid={imageSource}
-					alt="Profile"
+					alt='Profile'
 				/>
 			</div>
 		</div>

@@ -38,29 +38,25 @@ const Footer = (props) => {
 						flexWrap: 'wrap',
 						alignItems: 'center',
 						textAlign: ['center', 'initial'],
-					}}
-				>
+					}}>
 					<Box
 						sx={{
 							width: ['full', '1/2'],
 							mb: [3, 0],
-						}}
-					>
+						}}>
 						<Styled.h6
 							sx={{
 								my: 0,
 								fontWeight: 'light',
 								fontSize: 0,
-							}}
-						>
+							}}>
 							Copyright &copy; {new Date().getFullYear()} {title}
 						</Styled.h6>
 					</Box>
 					<Box
 						sx={{
 							width: ['full', '1/2'],
-						}}
-					>
+						}}>
 						{social.length && (
 							<Flex
 								sx={{
@@ -68,8 +64,7 @@ const Footer = (props) => {
 									p: 0,
 									justifyContent: ['center', 'flex-end'],
 								}}
-								as="ul"
-							>
+								as='ul'>
 								{social.map(({ name, url }) => {
 									const TagName = icons[name.toLowerCase()];
 									return (
@@ -77,14 +72,12 @@ const Footer = (props) => {
 											sx={{
 												mx: 1,
 											}}
-											key={name}
-										>
+											key={name}>
 											<a
 												sx={{ display: 'block' }}
 												href={url}
-												target="_blank"
-												rel="noopener noreferrer"
-											>
+												target='_blank'
+												rel='noopener noreferrer'>
 												<TagName
 													sx={{
 														width: 10,

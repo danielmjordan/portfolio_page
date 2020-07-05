@@ -25,8 +25,7 @@ const Portfolio = () => {
 		<Flex
 			sx={{
 				flexWrap: 'wrap',
-			}}
-		>
+			}}>
 			{projects.map((project) => (
 				<Project project={project} key={project.slug} />
 			))}

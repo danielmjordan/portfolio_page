@@ -22,21 +22,18 @@ const Header = (props) => {
 				<Flex
 					sx={{
 						flexWrap: 'wrap',
-					}}
-				>
+					}}>
 					<Box
 						sx={{
 							width: ['full', '1/2'],
-						}}
-					>
+						}}>
 						<AnchorLink
 							sx={{
 								color: 'primary',
 								textTransform: 'uppercase',
 								fontWeight: 'extrabold',
 							}}
-							to="/"
-						>
+							to='/'>
 							<Styled.h2
 								sx={{
 									display: 'inline-block',
@@ -44,8 +41,7 @@ const Header = (props) => {
 									my: 0,
 									mx: 2,
 									verticalAlign: 'bottom',
-								}}
-							>
+								}}>
 								{siteMetadata.title}
 							</Styled.h2>
 						</AnchorLink>
@@ -53,18 +49,16 @@ const Header = (props) => {
 					<Box
 						sx={{
 							width: ['full', '1/2'],
-						}}
-					>
+						}}>
 						<Flex
-							as="ul"
+							as='ul'
 							sx={{
 								width: 'full',
 								listStyle: 'none',
 								justifyContent: ['flex-start', 'flex-end'],
 								p: 0,
 								m: 0,
-							}}
-						>
+							}}>
 							<li sx={{ p: 2 }}>
 								<AnchorLink
 									sx={{
@@ -74,9 +68,8 @@ const Header = (props) => {
 										fontWeight: 'extrabold',
 										textDecoration: 'none',
 									}}
-									to="/#about"
-									replace
-								>
+									to='/#about'
+									replace>
 									About
 								</AnchorLink>
 							</li>
@@ -89,9 +82,8 @@ const Header = (props) => {
 										fontWeight: 'extrabold',
 										textDecoration: 'none',
 									}}
-									to="/#skills"
-									replace
-								>
+									to='/#skills'
+									replace>
 									Skills
 								</AnchorLink>
 							</li>
@@ -104,9 +96,8 @@ const Header = (props) => {
 										fontWeight: 'extrabold',
 										textDecoration: 'none',
 									}}
-									to="/#portfolio"
-									replace
-								>
+									to='/#portfolio'
+									replace>
 									Portfolio
 								</AnchorLink>
 							</li>
@@ -119,25 +110,23 @@ const Header = (props) => {
 										fontWeight: 'extrabold',
 										textDecoration: 'none',
 									}}
-									to="/#contact"
-									replace
-								>
+									to='/#contact'
+									replace>
 									Contact
 								</AnchorLink>
 							</li>
 							<li sx={{ p: 2 }}>
 								<a
 									href={Resume}
-									target="_blank"
-									rel="noopener noreferrer"
+									target='_blank'
+									rel='noopener noreferrer'
 									sx={{
 										color: 'primary',
 										textTransform: 'uppercase',
 										fontSize: 0,
 										fontWeight: 'extrabold',
 										textDecoration: 'none',
-									}}
-								>
+									}}>
 									Resume
 								</a>
 							</li>
