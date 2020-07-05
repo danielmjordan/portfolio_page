@@ -32,6 +32,7 @@ const Profile = () => {
 	const profile = allFile.edges.find(
 		({ node: { name } }) => name === 'profile'
 	);
+
 	const profileAlt = allFile.edges.find(
 		({ node: { name } }) => name === 'profile-alt'
 	);
