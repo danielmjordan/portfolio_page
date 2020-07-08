@@ -1,34 +1,34 @@
 [
-	{
-		"name": "MovieApp",
-		"url": "https://movie-app-d170f1.netlify.app/",
-		"technologies": ["Vue", "Vuex", "Vuetify", "Jest"],
-		"start": "2020-04-19",
-		"end": "2020-04-23",
-		"description": "A single-page application allowing users to browse top-rated films, search for films, and add films to a favorites list. Favorites are persisted using the browser's local storage. Built in order to gain some exposure to the Vue framework."
-	},
-	{
-		"name": "ES Apparel",
-		"url": "https://github.com/Exact-Science/es_apparel_fe",
-		"technologies": [
-			"React",
-			"Express",
-			"PostgreSQL",
-			"MaterialUI",
-			"Artillery",
-			"New Relic",
-			"AWS-EC2"
-		],
-		"start": "2020-01-20",
-		"end": "2020-02-15",
-		"description": " A full-stack Ratings and Reviews microservice built out for an E-commerce application. Renders pertinent user-provided product information and allows users to submit reviews of their own. Overall contributes to a better E-commerce experience, allowing potential consumers to make more informed purchase decisions based upon first-hand, user-provided feedback and experience."
-	},
-	{
-		"name": "Choss Finder",
-		"url": "https://github.com/danielmjordan/chossfinder",
-		"technologies": ["React Native", "Expo"],
-		"start": "2020-02-29",
-		"end": "2020-03-05",
-		"description": "A quick proof-of-concept application allowing users to access a curated list of top-rated rock climbs based on their current location."
-	}
+  {
+    "name": "MovieApp",
+    "url": "https://movie-app-d170f1.netlify.app/",
+    "technologies": ["Vue", "Vuex", "Vuetify", "Jest"],
+    "start": "2020-04-19",
+    "end": "2020-04-23",
+    "description": "A single-page application allowing users to browse top-rated films, search for films, and add films to a favorites list. Favorites are persisted using the browser's local storage. Built in order to gain some exposure to the Vue framework."
+  },
+  {
+    "name": "ES Apparel",
+    "url": "https://github.com/Exact-Science/es_apparel_fe",
+    "technologies": [
+      "React",
+      "Express",
+      "PostgreSQL",
+      "MaterialUI",
+      "Artillery",
+      "New Relic",
+      "AWS-EC2"
+    ],
+    "start": "2020-01-20",
+    "end": "2020-02-15",
+    "description": " A full-stack Ratings and Reviews microservice built out for an E-commerce application. Renders pertinent user-provided product information and allows users to submit reviews of their own. Overall contributes to a better E-commerce experience, allowing potential consumers to make more informed purchase decisions based upon first-hand, user-provided feedback and experience."
+  },
+  {
+    "name": "Choss Finder",
+    "url": "https://github.com/danielmjordan/chossfinder",
+    "technologies": ["React Native", "Expo"],
+    "start": "2020-02-29",
+    "end": "2020-03-05",
+    "description": "A quick proof-of-concept application allowing users to access a curated list of top-rated rock climbs based on their current location."
+  }
 ]
